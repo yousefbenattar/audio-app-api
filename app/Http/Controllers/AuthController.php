@@ -58,4 +58,10 @@ class AuthController extends Controller
             "message" => "logout success"
         ]);
     }
+
+    public function getuser (){
+        return response ([
+            "message" => auth()->user()
+        ]);
+    }
 }
